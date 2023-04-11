@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Class - Instructor Profile</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="financial.html">Financial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="communication.html">Communication</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enrolment.html">Enrolment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="attendance_and_grade.html">Attendance and Grade</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="student.html">Student</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="instructor.html">Instructor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+        <div class="container">
+            <h1>Add Class</h1>
+            <form>
+                <div class="form-group">
+                    <label for="class-name">Class Name:</label>
+                    <input type="text" class="form-control" id="class-name" name="class_name" required>
+                </div>
+
+                <div class="form-group schedule-fields">
+                    <div class="form-group schedule-field">
+                        <div class="form-row align-items-center">
+                            <div class="col-md-4 mb-3">
+                                <label for="class-date-1">Class Date:</label>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" id="class-date-1" name="class_date[]"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="class-time-1">Class Time:</label>
+                                <div class="input-group">
+                                    <input type="time" class="form-control" id="class-time-1" name="class_time[]"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="class-duration-1">Class Duration:</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="class-duration-1"
+                                        name="class_duration[]" placeholder="in minutes" required>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-danger remove-schedule-field" type="button">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary add-schedule-field" type="button">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 mb-5">
+                    <button type="button" class="btn btn-secondary" onclick="window.location.href='instructor_classes_taught.html';">Return</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Bootstrap and Font Awesome CDNs -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+        <!-- jQuery and Bootstrap JS CDNs -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="../Javascript/main.js"></script>
+    </body>
+
+
+</html>

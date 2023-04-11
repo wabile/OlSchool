@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #444444;
+  }
+  
+  .form-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #999999;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .form-header {
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .form-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .btn-register {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  .payroll-options {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .add-education-button{
+    margin-top:  25px;
+  }
+
+  .remove-education{
+    position: absolute;
+    top: -3px;
+    right: 1px;
+  }
