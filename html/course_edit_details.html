@@ -4,13 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Courses</title>
+  <title>Edit Course Details</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Menu</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -48,50 +46,45 @@
   </nav>
 
   <div class="container my-5">
-    <h1 class="text-center mb-5">Courses</h1>
-    <div class="row">
-      <div class="col-md-3">
-        <h5>Course Code</h5>
-      </div>
-      <div class="col-md-7">
-        <h5>Course Name</h5>
-      </div>
-    </div>
-    <div class="scrollable">
-      <div class="row">
-        <div class="col-md-3">
-          <p>CS101</p>
-        </div>
-        <div class="col-md-7">
-          <p>Introduction to Computer Science</p>
-        </div>
-        <div class="col-md-2 text-right">
-          <a href="course_details.html" class="btn btn-sm">View Details</a>
+    <h1 class="text-center mb-5">Edit Course Details</h1>
+    <form>
+      <div class="form-group row">
+        <label for="course_code" class="col-sm-3 col-form-label">Course Code:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="course_code" value="CS101">
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-3">
-          <p>MATH201</p>
-        </div>
-        <div class="col-md-7">
-          <p>Calculus I</p>
-        </div>
-        <div class="col-md-2 text-right">
-          <a href="course_details.html" class="btn btn-sm">View Details</a>
+      <div class="form-group row">
+        <label for="course_name" class="col-sm-3 col-form-label">Course Name:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="course_name" value="Introduction to Computer Science">
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-3">
-          <p>ENG101</p>
-        </div>
-        <div class="col-md-7">
-          <p>English Composition</p>
-        </div>
-        <div class="col-md-2 text-right">
-          <a href="course_details.html" class="btn btn-sm">View Details</a>
+      <div class="form-group row">
+        <label for="instructor" class="col-sm-3 col-form-label">Instructor:</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="instructor" value="John Doe">
         </div>
       </div>
-    </div>
+      <div class="form-group row">
+        <label for="credits" class="col-sm-3 col-form-label">Credits:</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="credits" value="3">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="description" class="col-sm-3 col-form-label">Description:</label>
+        <div class="col-sm-9">
+          <textarea class="form-control" id="description"
+            rows="5">This course introduces the fundamental concepts and principles of computer science. Topics include programming languages, algorithms, data structures, and software engineering. Students will gain hands-on experience through programming assignments and projects.</textarea>
+        </div>
+      </div>
+
+          <a href="course_details.html" class="btn btn-secondary">Cancel</a>
+
+          <button type="submit" class="btn btn-primary">Save</button>
+
+    </form>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

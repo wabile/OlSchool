@@ -62,3 +62,18 @@ body {
     top: -3px;
     right: 1px;
   }
+
+  .student-list{
+    height: 800px;
+    overflow-y: scroll;
+  }
+
+  .scrollable {
+    height: 400px;
+    overflow-y: scroll;
+  }
+
+  .scroll-container{
+    height: 400px;
+    overflow-y: auto;
+  }

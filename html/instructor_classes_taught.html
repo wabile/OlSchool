@@ -8,45 +8,54 @@
     <title>Classes Taught - Instructor Profile</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-NNQeNlIo07qtRbE1uX9vI8oRZV+iCdhJnGTPq7vMH8MShWVfZnUsxZxX/v2T8rZGt7EHDsJysOCt+kLj8p/EWQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Instructor Profile</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="instructor_profile.html">Profile</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Classes Taught<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="settings.html">Settings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="financial.html">Financial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="communication.html">Communication</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="enrolment.html">Enrolment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="attendance_and_grade.html">Attendance and Grade</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="student.html">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="instructor.html">Instructor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
         <!-- Classes Taught -->
         <div class="row">
             <div class="col-md-12 mt-5">
@@ -69,32 +78,31 @@
                             <td>Algebra I</td>
                             <td>Mathematics</td>
                             <td>Room 101</td>
-                            <td><p>20:00</p>
-                                <p>18:15</p></td>
-                            <td><p>Monday</p>
-                                <p>Friday</p></td>
-                            </tr>
-                        </tbody>
-                    </table>
-        
-                    <div class="mt-5 mb-5">
-                        <a href="instructor_profile.html" class="btn btn-secondary return-btn"><i class="fas fa-arrow-left"></i>
-                            Return</a>
-                        <a href="add_class.html" class="btn btn-primary ml-auto">Add Class</a>
-                    </div>
+                            <td>
+                                <p>20:00</p>
+                                <p>18:15</p>
+                            </td>
+                            <td>
+                                <p>Monday</p>
+                                <p>Friday</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="mt-5 mb-5">
+                    <a href="instructor_profile.html" class="btn btn-secondary return-btn"><i></i>
+                        Return</a>
+                    <a href="add_class.html" class="btn btn-primary ml-auto">Add Class</a>
                 </div>
             </div>
         </div>
-        
-        <!-- Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK7LYB11crsVsTU/ twBfUpRxpdtaXno27kipcYBf0dom" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        </body>
-        </html>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

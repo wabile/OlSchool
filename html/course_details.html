@@ -4,13 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Courses</title>
+  <title>Course Details</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Menu</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -48,52 +46,41 @@
   </nav>
 
   <div class="container my-5">
-    <h1 class="text-center mb-5">Courses</h1>
+    <h1 class="text-center mb-5">Course Details</h1>
     <div class="row">
-      <div class="col-md-3">
-        <h5>Course Code</h5>
+      <div class="col-md-6">
+        <h4>Course Code</h4>
+        <p>CS101</p>
       </div>
-      <div class="col-md-7">
-        <h5>Course Name</h5>
-      </div>
-    </div>
-    <div class="scrollable">
-      <div class="row">
-        <div class="col-md-3">
-          <p>CS101</p>
-        </div>
-        <div class="col-md-7">
-          <p>Introduction to Computer Science</p>
-        </div>
-        <div class="col-md-2 text-right">
-          <a href="course_details.html" class="btn btn-sm">View Details</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <p>MATH201</p>
-        </div>
-        <div class="col-md-7">
-          <p>Calculus I</p>
-        </div>
-        <div class="col-md-2 text-right">
-          <a href="course_details.html" class="btn btn-sm">View Details</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <p>ENG101</p>
-        </div>
-        <div class="col-md-7">
-          <p>English Composition</p>
-        </div>
-        <div class="col-md-2 text-right">
-          <a href="course_details.html" class="btn btn-sm">View Details</a>
-        </div>
+      <div class="col-md-6">
+        <h4>Course Name</h4>
+        <p>Introduction to Computer Science</p>
       </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Instructor</h4>
+        <p>John Doe</p>
+      </div>
+      <div class="col-md-6">
+        <h4>Credits</h4>
+        <p>3</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Description</h4>
+        <p>This course introduces the fundamental concepts and principles of computer science. Topics include
+          programming languages, algorithms, data structures, and software engineering. Students will gain hands-on
+          experience through programming assignments and projects.</p>
+      </div>
+    </div>
 
+        <a href="courses.html" class="btn btn-secondary">Back to Courses</a>
+
+        <a href="course_edit_details.html" class="btn btn-primary">Edit Details</a>
+
+  </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
