@@ -14,8 +14,8 @@ function addEducation() {
     const institutionLabel = $("<label>").addClass("form-label").text("Institution:");
     const institutionInput = $("<input>").addClass("form-control institution-input").attr("id", `institution${educationCount}`).attr("name", `institution${educationCount}`).attr("required", "required");
 
-    const removeButtonCol = $("<div>").addClass("col-1 align-self-center").css({position: 'relative'});
-    const removeButton = $("<button>").addClass("btn btn-outline-danger remove-education").attr("type", "button").html('<i class="fas fa-trash"></i>').css({position: 'absolute', top: "1px", right: "1px"});
+    const removeButtonCol = $("<div>").addClass("col-1 align-self-center").css({ position: 'relative' });
+    const removeButton = $("<button>").addClass("btn btn-outline-danger remove-education").attr("type", "button").html('<i class="fas fa-trash"></i>').css({ position: 'absolute', top: "1px", right: "1px" });
 
     container.append(div);
     div.append(educationCol);
@@ -46,22 +46,39 @@ function addScheduleField() {
     let newField = `
         <div class="form-group schedule-field">
             <div class="form-row align-items-center">
-                <div class="col-md-4 mb-3">
+            <div class="col-md-6 mb-3">
+            <label for="class-room-${scheduleCount}">Room:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="class-room-${scheduleCount}" name="class_room[]" required>
+            </div>
+        </div>
+                <div class="col-md-6 mb-3">
                     <label for="class-date-${scheduleCount}">Class Date:</label>
                     <div class="input-group">
-                        <input type="date" class="form-control" id="class-date-${scheduleCount}" name="class_date[]" required>
+                        <div class="input-group">
+                        <select class="form-control" id="class-date-${scheduleCount}" name="class_date[]" required>
+                            <option value="">Select a day</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                    </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <label for="class-time-${scheduleCount}">Class Time:</label>
+                <div class="col-md-6 mb-3">
+                    <label for="class-time-start-${scheduleCount}">Class Start:</label>
                     <div class="input-group">
-                        <input type="time" class="form-control" id="class-time-${scheduleCount}" name="class_time[]" required>
+                        <input type="time" class="form-control" id="class-time-start-${scheduleCount}" name="class_time[]" required>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <label for="class-duration-${scheduleCount}">Class Duration:</label>
-                    <div class="input-group">
-                        <input type="number" class="form-control" id="class-duration-${scheduleCount}" name="class_duration[]" placeholder="in minutes" required>
+                <div class="col-md-6 mb-3">
+                <label for="class-time-end-${scheduleCount}">Class End:</label>
+                <div class="input-group">
+                    <input type="time" class="form-control" id="class-time-end-${scheduleCount}" name="class_time[]" required>
                         <div class="input-group-append">
                             <button class="btn btn-outline-danger remove-schedule-field" type="button">
                                 <i class="fas fa-trash"></i>

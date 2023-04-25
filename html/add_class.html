@@ -62,32 +62,51 @@
             <h1>Add Class</h1>
             <form>
                 <div class="form-group">
-                    <label for="class-name">Class Name:</label>
-                    <input type="text" class="form-control" id="class-name" name="class_name" required>
+                    <label for="course-name">Course Name:</label>
+                    <input type="text" class="form-control" id="course-name" name="course_name" required>
                 </div>
+                <div class="form-group">
+                  <label for="subject">Subject:</label>
+                  <input type="text" class="form-control" id="subject" name="subject" required>
+              </div>
 
                 <div class="form-group schedule-fields">
                     <div class="form-group schedule-field">
                         <div class="form-row align-items-center">
-                            <div class="col-md-4 mb-3">
-                                <label for="class-date-1">Class Date:</label>
+                          <div class="col-md-6 mb-3">
+                            <label for="class-room-1">Room:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="class-room-1" name="class_room[]"
+                                    required>
+                            </div>
+                        </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="class-date-1">Class Date:</label>
+                            <div class="input-group">
+                                <select class="form-control" id="class-date-1" name="class_date[]" required>
+                                    <option value="">Select a day</option>
+                                    <option value="Monday">Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wednesday">Wednesday</option>
+                                    <option value="Thursday">Thursday</option>
+                                    <option value="Friday">Friday</option>
+                                    <option value="Saturday">Saturday</option>
+                                    <option value="Sunday">Sunday</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="class-time-start-1">Time Start:</label>
                                 <div class="input-group">
-                                    <input type="date" class="form-control" id="class-date-1" name="class_date[]"
+                                    <input type="time" class="form-control" id="class-time-start-1" name="class_time_start[]"
                                         required>
                                 </div>
                             </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="class-time-1">Class Time:</label>
-                                <div class="input-group">
-                                    <input type="time" class="form-control" id="class-time-1" name="class_time[]"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="class-duration-1">Class Duration:</label>
-                                <div class="input-group">
-                                    <input type="number" class="form-control" id="class-duration-1"
-                                        name="class_duration[]" placeholder="in minutes" required>
+                            <div class="col-md-6 mb-3">
+                              <label for="class-time-end-1">Time End:</label>
+                              <div class="input-group">
+                                  <input type="time" class="form-control" id="class-time-end-1" name="class_time_end[]"
+                                      required>
                                     <div class="input-group-append">
                                         <button class="btn btn-outline-danger remove-schedule-field" type="button">
                                             <i class="fas fa-trash"></i>
